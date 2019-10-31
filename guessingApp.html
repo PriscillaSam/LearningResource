@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        margin: 50px auto;
+      }
+
+      input[type="number"] {
+        border-radius: 5px;
+        width: 200px;
+        height: 30px;
+        padding: 10px;
+      }
+
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #ffffff;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to my guessing app</h1>
+      <h3>Guess a number between 0 and 10</h3>
+      <input type="number" placeholder="enter a number" id="user-input" />
+      <button id="submit">Submit</button>
+      <div>
+        <p id="feedback"></p>
+      </div>
+      <div>
+        <p id="guesses"></p>
+      </div>
+    </div>
+    <script src="./guessingApp.js"></script>
+  </body>
+</html>

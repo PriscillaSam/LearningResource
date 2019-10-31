@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello Javascript</title>
+
+    <style>
+      div {
+      }
+      button {
+        color: #ffffff;
+        border: 0;
+        border-radius: 10px;
+        background: #5ad2ef;
+        padding: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>Hello Javascript 👋</h3>
+      <p id="demo">
+        This paragraph is about to change when I click this button.
+      </p>
+      <button onclick="changeParagraphText()">Click me</button>
+    </div>
+    <script>
+      // you can place your scripts anywhere but it is adviced to place it before the closing body tag so that it runs after the html and css has been rendered
+      // Another way is to write it in a separate file and add a link to it
+
+      document.write("My first coding lesson");
+      var locate = prompt("Where are you currently?");
+
+      function changeParagraphText() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+        console.log(locate);
+        alert("This is awesome");
+      }
+
+      let date = new Date();
+      date = "2019/10/30";
+      console.log(date);
+    </script>
+  </body>
+</html>
